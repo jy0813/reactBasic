@@ -7,6 +7,7 @@ function AppProfile() {
       <Profile
         image='https://plus.unsplash.com/premium_photo-1672281090684-06f42ed9827f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=709&q=80'
         name='James Kim'
+        badge={true}
         title='Frontend Engineer'
       />
       <Profile

@@ -4,24 +4,18 @@ import Counter from './components/Counter';
 
 function AppCounter() {
   const [count, setCount] = useState(0);
-  const [count2, setCount2] = useState(0);
-
-  const AllCount = (count) => {
-    setCount(count);
-  };
-
-  const AllCount2 = (count2) => {
-    setCount2(count2);
+  const handleClick = () => {
+    setCount((prev) => prev + 1);
   };
 
   return (
     <div className='container'>
       <div className='banner'>
-        Total Count : {count + count2} {count + count2 > 10 ? '🔥' : '❄'}
+        Total Count : {count} {count > 10 ? '🔥' : '❄'}
       </div>
       <div className='counters'>
-        <Counter count={count} setCount={AllCount} total={count + count2} />
-        <Counter count={count2} setCount={AllCount2} total={count + count2} />
+        <Counter total={count} onClick={handleClick} />
+        <Counter total={count} onClick={handleClick} />
       </div>
     </div>
   );

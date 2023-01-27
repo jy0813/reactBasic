@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export default function Counter({ count, setCount, total }) {
+export default function Counter({ total, onClick }) {
+  const [count, setCount] = useState(0);
   const onIncrease = () => {
     setCount((prev) => prev + 1);
+    onClick();
   };
   return (
     <div className='counter'>

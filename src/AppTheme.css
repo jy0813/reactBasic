@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: navy;
+  color:#fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: navy;
+  color:#fff;
+}
